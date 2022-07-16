@@ -132,7 +132,8 @@ add data source -> ![Screenshot from 2022-07-16 16-28-33](https://user-images.gi
 prometheus
 ![Screenshot from 2022-07-16 16-44-54](https://user-images.githubusercontent.com/102728347/179357543-57fea3cc-e144-47c3-878a-d5f11790accf.png)
 
+У строку url вставляємо такий адрес http://prometheus:9090
+Далі зберізаємо натиснувши знизу `save & test`
 
-http://prometheus:9090
 
 wget -q -O node_exporter.sh https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/node-exporter.sh && chmod +x node_exporter.sh && sudo /bin/bash node_exporter.sh
