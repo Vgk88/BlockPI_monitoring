@@ -16,13 +16,13 @@ sudo su
 
 ```
 
-## Спочатку оновлюємо пакети
+### Спочатку оновлюємо пакети
 ```
 sudo apt update && sudo apt upgrade -y
 
 ```
 ![Image text](https://github.com/cybernekit/RouterSetupGuide/blob/main/img/Screenshot%20from%202022-05-17%2016-49-11.png)
-## Устанавливаем docker
+### Устанавливаем docker
 (не обов'язково якщо встановлений docker)
 ```
 sudo apt-get install ca-certificates curl gnupg lsb-release -y
@@ -32,7 +32,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
 ```
-## Завантажуємо docker-compose.yml
+### Завантажуємо docker-compose.yml
 ```
 cd ~
 git clone https://github.com/cybernekit/Grafana-Prometheus.git
@@ -41,7 +41,7 @@ cd ~/Grafana-Prometheus
 ```
 ![Screenshot from 2022-05-28 13-24-48](https://user-images.githubusercontent.com/59205554/170821373-17d41ca2-0a57-4721-a64d-1dce8ee9f8a3.png)
 
-## Створюємо контейнер
+### Створюємо контейнер
 ```
 docker swarm init
 docker stack deploy -c ~/Grafana-Prometheus/docker-compose.yml monitoring
@@ -51,7 +51,7 @@ docker stack deploy -c ~/Grafana-Prometheus/docker-compose.yml monitoring
 
 ![Screenshot from 2022-05-28 13-25-13](https://user-images.githubusercontent.com/59205554/170821366-794d7c42-8f30-43fb-8281-30aa0b98c5b5.png)
 
-## Провіряємо чи запустилися контейнери
+### Провіряємо чи запустилися контейнери
 Не спіши запускати зачикай деякий час щоб воно все запустило.
 
 ```
@@ -61,7 +61,7 @@ docker ps
 
 ![Screenshot from 2022-05-28 13-35-21](https://user-images.githubusercontent.com/59205554/170821748-022e38d8-d824-465a-8979-334cff2ca31f.png)
 
-## Тепер провіряємо чи запускається графана 
+### Тепер провіряємо чи запускається графана 
 Відкриваємо google на своєму компютері. 
 
 Водимо адрес через браузер з портом `3000`:
@@ -74,4 +74,10 @@ http://<IP_address>:3000
 
 Перший раз уведення паролю реєстраційний. Коли ми перший раз ведемо емаіл і пароль, графана запише його в базу даних і з наступного разу, щоб зайти на свою графану потрібно буде вести ці дані.
 
-## Тепер 
+# Налаштування конфігурації prometheus
+Переходимо до конфігурацюї promtheus. Файл називадться `promtheus.yml`
+```
+nano /var/lib/docker/volumes/monitoring_prom-configs/_data/prometheus.yml
+```
+
+
