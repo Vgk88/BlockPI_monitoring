@@ -52,6 +52,8 @@ docker stack deploy -c ~/Grafana-Prometheus/docker-compose.yml monitoring
 ![Screenshot from 2022-05-28 13-25-13](https://user-images.githubusercontent.com/59205554/170821366-794d7c42-8f30-43fb-8281-30aa0b98c5b5.png)
 
 ## Провіряємо чи запустилися контейнери
+Не спіши запускати зачикай деякий час щоб воно все запустило.
+
 ```
 docker ps
 
@@ -59,10 +61,14 @@ docker ps
 
 ![Screenshot from 2022-05-28 13-35-21](https://user-images.githubusercontent.com/59205554/170821748-022e38d8-d824-465a-8979-334cff2ca31f.png)
 
-## Тепер ми заходимо в графану 
-Відкриваємо google на своєму компютері або на сервері. 
+## Тепер провіряємо чи запускається графана 
+Відкриваємо google на своєму компютері. 
 
-Водимо адрес через браузер:
+Водимо адрес через браузер з портом `3000`:
 ```
 http://<IP_address>:3000
 ```
+Ми побачимо наступне(Звичайно якщо все правильно встановилося)
+
+![ekeDbSX](https://user-images.githubusercontent.com/102728347/179351476-df713563-4041-4e6e-8b5d-b0ad197e4c30.jpeg)
+
