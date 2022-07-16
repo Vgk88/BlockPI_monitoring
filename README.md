@@ -3,9 +3,7 @@
 1. Встановлюємо grafana, prometheus i node-exporter
 2. Налаштування конфігурації prometheuss 
 3. Налаштування Grafana
-4. Настройка панелі
-  * HyperNode
-  * Klaytn
+4. Настройка панелі HyperNode і Klaytn
 
 
 
@@ -155,6 +153,22 @@ prometheus
 
 * [HyperNode](https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/HyperNode.json)
 * [Klaytn](https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/Klaytn.json)
+
+Самого початку вам викине помилку, але для того щоб все запрацювало потрібно зайти в `dashboard settings` -> `Variables`
+
+![AOfRysh](https://user-images.githubusercontent.com/102728347/179372068-436382f2-18b6-457d-be8a-7d39afc12751.jpeg)
+
+![Screenshot from 2022-07-17 00-18-46](https://user-images.githubusercontent.com/102728347/179372230-96412459-f16d-4c85-bd81-8710e044e1c5.png)
+
+Тепер нам потрібно зайти в вкожний із цих варіантів, виправити `Data source` на prometheus і зберегти `Update`
+
+![Screenshot from 2022-07-17 00-23-24](https://user-images.githubusercontent.com/102728347/179372346-c3cde8c1-49b6-45d0-ac90-1a5e42a37f67.png)
+
+Виходимо на основний екран і натискаємо `Klaynt node status` -> `edit`, а потім также `Klaynt node hight` -> `edit`
+![Screenshot from 2022-07-17 00-27-14](https://user-images.githubusercontent.com/102728347/179372502-fec90a30-9cb4-4242-9016-0ff83a739dba.png)
+
+Також вибираєте prometheus і натискаєте `apply`
+![Screenshot from 2022-07-17 00-32-41](https://user-images.githubusercontent.com/102728347/179372586-52b32e64-d397-4d31-8328-9d34fa1d3960.png)
 
 
 # Настройка панелі Klaytn
