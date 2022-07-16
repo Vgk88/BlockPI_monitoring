@@ -34,6 +34,13 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
 ```
+### Устанавливаем git
+(не обов'язково якщо встановлений git)
+```
+apt install git
+
+```
+
 ### Завантажуємо docker-compose.yml
 ```
 cd ~
