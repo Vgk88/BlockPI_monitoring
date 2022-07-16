@@ -126,7 +126,7 @@ http://<IP_address>:3000
 ![ngazd4U](https://user-images.githubusercontent.com/102728347/179351515-3004bcf9-edff-4445-8658-416eadf7e41d.jpeg)
 
 Позамовчуванню user -> `admin`; password -> `admin`.
-Далі ви вам запропонує встановити свій пароль, grafana запише його в базу даних і з наступного разу, щоб зайти на свою grafana потрібно буде вести ці дані.
+Далі вам запропонує встановити свій пароль, grafana запише його в базу даних і з наступного разу, щоб зайти на свою grafana потрібно буде вести ці дані.
 
 Коли зайшли в графану натискаємо шистиграник -> ![Screenshot from 2022-07-16 16-27-06](https://user-images.githubusercontent.com/102728347/179356902-73f0009d-36bd-49f7-b012-3516869bebdd.png) 
 
@@ -138,20 +138,19 @@ prometheus
 У строку url вставляємо такий адрес http://prometheus:9090
 Далі зберізаємо натиснувши знизу `save & test`
 
-Якщо ти отримав зелуну галочку із назвою
+Якщо ти отримав зелуну галочку із назвою значить все пройшло успішоно
 `Data source is working`
 
-# Настройка панелі HyperNode і Klaytn
+# Налаштування панелі Klaytn
 
 Натискаємо плюс -> import
 
 Ось що ми побачимо  
 ![Screenshot from 2022-07-16 17-04-14](https://user-images.githubusercontent.com/102728347/179358209-ecd023cf-1ca3-47f9-82b5-5c20b5ceb039.png)
 
-Вибираємо яку хочемо загрузити таблицю від розробників BlockPI
+Загружаємо таблицю від розробників BlockPI
 і вставляємо її в поле `Import via panel json`
 
-* [HyperNode](https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/HyperNode.json)
 * [Klaytn](https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/Klaytn.json)
 
 Самого початку вам викине помилку, але для того щоб все запрацювало потрібно зайти в `dashboard settings` -> `Variables`
@@ -172,3 +171,5 @@ prometheus
 
 
 # Вітаю тепер ти можеш відсліковувати свої характеристики
+
+
