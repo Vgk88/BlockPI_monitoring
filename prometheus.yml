@@ -26,7 +26,7 @@ scrape_configs:
   - job_name: 'node'
     scrape_interval: 10s
     static_configs:
-      - targets: ['ваш_ip_адресс:9100']
+      - targets: ['your_address:9100']
         labels:
           class: system
           name: klaytn
@@ -35,7 +35,7 @@ scrape_configs:
   - job_name: 'hypernode'
     scrape_interval: 10s
     static_configs:
-      - targets: ['ваш_ip_адресс:8899']
+      - targets: ['your_address:8899']
         labels:
           class: HyperNode
           name: hypernode
@@ -44,7 +44,7 @@ scrape_configs:
   - job_name: 'klaytn'
     scrape_interval: 10s
     static_configs:
-      - targets: ['ваш_ip_адресс:31275']
+      - targets: ['your_address:31275']
         labels:
           class: klaytn-rpc-node
           name: klaytn-rpc-node-1
