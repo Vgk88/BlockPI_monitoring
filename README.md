@@ -3,6 +3,9 @@
 1. Встановлюємо grafana, prometheus i node-exporter
 2. Налаштування конфігурації prometheuss 
 3. Налаштування Grafana
+4. Настройка панелі HyperNode
+5. Настройка панелі Klaytn
+
 
 # Встановлюємо grafana, prometheus i node-exporter
 
@@ -137,5 +140,6 @@ prometheus
 
 Якщо ти отримав зелуну галочку із назвою
 `Data source is working`
+
 
 wget -q -O node_exporter.sh https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/node-exporter.sh && chmod +x node_exporter.sh && sudo /bin/bash node_exporter.sh
