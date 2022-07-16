@@ -98,7 +98,6 @@ wget https://raw.githubusercontent.com/MaxMavaIll/BlockPI_monitoring/main/promet
 Тепер замінюємо в цьому файлі `your_address` на ваш адрес
 ```
 sed -i 's/your_address/<Your_address>/' /var/lib/docker/volumes/monitoring_prom-configs/_data/prometheus.yml
-
 ```
 ### Перезапускаємо prometheus
 Для того щоб перезапустити прометеус нам потрібно дізнатися id контейнера
