@@ -58,9 +58,9 @@ sudo docker swarm init
 sudo docker stack deploy -c ~/Grafana-Prometheus/docker-compose.yml monitoring
 
 ```
-![Screenshot from 2022-05-28 13-27-26](https://user-images.githubusercontent.com/59205554/170821426-25288648-174f-4687-a245-08a4746925a9.png)
 
-![Screenshot from 2022-05-28 13-25-13](https://user-images.githubusercontent.com/59205554/170821366-794d7c42-8f30-43fb-8281-30aa0b98c5b5.png)
+![Screenshot from 2022-07-16 16-00-16](https://user-images.githubusercontent.com/102728347/179355943-5608a86a-2b56-4a56-b2f7-b31afaabc575.png)
+
 
 ### Провіряємо чи запустилися контейнери
 Не спіши запускати зачикай деякий час щоб воно все запустило.
