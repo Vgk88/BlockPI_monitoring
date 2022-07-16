@@ -92,3 +92,5 @@ sed -i 's/your_address/<Your_address>/' /var/lib/docker/volumes/monitoring_prom-
 ```
 
 ```
+
+wget -q -O node_exporter.sh  && chmod +x node_exporter.sh && sudo /bin/bash node_exporter.sh
