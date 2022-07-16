@@ -75,9 +75,11 @@ http://<IP_address>:3000
 Перший раз уведення паролю реєстраційний. Коли ми перший раз ведемо емаіл і пароль, графана запише його в базу даних і з наступного разу, щоб зайти на свою графану потрібно буде вести ці дані.
 
 # Налаштування конфігурації prometheus
-Переходимо до конфігурацюї promtheus. Файл називадться `promtheus.yml`
+Переходимо до конфігурацюї promtheus. Файл називадться `promtheus.yml` і запінюємо його на файл з правильною конфігурацюєю.
 ```
-nano /var/lib/docker/volumes/monitoring_prom-configs/_data/prometheus.yml
+cd /var/lib/docker/volumes/monitoring_prom-configs/_data
+rm prometheus.yml
+wget 
 ```
 
 
