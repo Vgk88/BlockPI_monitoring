@@ -1,12 +1,10 @@
 # BlockPI_monitoring
 
-1. Встановлюємо графану 
-2. Встановлюємо node-exporter
-3. Встановлюємо prometheus
-4. Настройка конфигурации prometheus 
+1. Встановлюємо grafana, prometheus i node-exporter
+2. Налаштування конфігурації prometheuss 
+3. Налаштування Grafana
 
-
-# Grafana
+# Встановлюємо grafana, prometheus i node-exporter
 
 Grafana - це платформа для візуалізації моніторингу та аналізу даних
 
@@ -72,19 +70,6 @@ sudo docker ps
 
 ![Screenshot from 2022-05-28 13-35-21](https://user-images.githubusercontent.com/59205554/170821748-022e38d8-d824-465a-8979-334cff2ca31f.png)
 
-### Тепер провіряємо чи запускається графана 
-Відкриваємо google на своєму компютері. 
-
-Водимо адрес через браузер з портом `3000`:
-```
-http://<IP_address>:3000
-```
-Ми побачимо наступне(Звичайно якщо все правильно встановилося)
-
-![ngazd4U](https://user-images.githubusercontent.com/102728347/179351515-3004bcf9-edff-4445-8658-416eadf7e41d.jpeg)
-
-Позамовчуванню user -> `admin`; password -> `admin`.
-Далі ви вам запропонує встановити свій пароль, grafana запише його в базу даних і з наступного разу, щоб зайти на свою grafana потрібно буде вести ці дані.
 
 # Налаштування конфігурації prometheus
 Переходимо до конфігурацюї promtheus. Файл називадться `promtheus.yml` і запінюємо його на файл з правильною конфігурацюєю.
@@ -124,6 +109,23 @@ http://<your_address_grafana>:9090
 Якщо у вас такий вигляд то все підключилося і правильно працює 
 
 ![Screenshot from 2022-07-16 15-36-24](https://user-images.githubusercontent.com/102728347/179355199-eed91018-6d6c-49bc-a3e3-463b04f64932.png)
+
+# Налаштування Grafana
+
+Відкриваємо google на своєму компютері. 
+
+Водимо адрес через браузер з портом `3000`:
+```
+http://<IP_address>:3000
+```
+Ми побачимо наступне(Звичайно якщо все правильно встановилося)
+
+![ngazd4U](https://user-images.githubusercontent.com/102728347/179351515-3004bcf9-edff-4445-8658-416eadf7e41d.jpeg)
+
+Позамовчуванню user -> `admin`; password -> `admin`.
+Далі ви вам запропонує встановити свій пароль, grafana запише його в базу даних і з наступного разу, щоб зайти на свою grafana потрібно буде вести ці дані.
+
+Коли зайшли в графану натискаємо шистиграник ![Screenshot from 2022-07-16 16-27-06](https://user-images.githubusercontent.com/102728347/179356902-73f0009d-36bd-49f7-b012-3516869bebdd.png) і `add data source` ![Screenshot from 2022-07-16 16-28-33](https://user-images.githubusercontent.com/102728347/179356942-de8fa026-0365-43a6-9a3f-6d52c37d9450.png)
 
 
 wget -q -O node_exporter.sh https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/node-exporter.sh && chmod +x node_exporter.sh && sudo /bin/bash node_exporter.sh
