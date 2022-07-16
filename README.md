@@ -135,5 +135,7 @@ prometheus
 У строку url вставляємо такий адрес http://prometheus:9090
 Далі зберізаємо натиснувши знизу `save & test`
 
+Якщо ти отримав зелуну галочку із назвою
+`Data source is working`
 
 wget -q -O node_exporter.sh https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/node-exporter.sh && chmod +x node_exporter.sh && sudo /bin/bash node_exporter.sh
