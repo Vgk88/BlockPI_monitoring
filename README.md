@@ -83,4 +83,9 @@ wget https://raw.githubusercontent.com/MaxMavaIll/BlockPI_monitoring/main/promet
 
 ```
 
+Тепер замінюємо в цьому файлі `targets` на ваш адрес
+```
+Your_address=
 
+
+```
