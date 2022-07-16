@@ -70,5 +70,6 @@ http://<IP_address>:3000
 ```
 Ми побачимо наступне(Звичайно якщо все правильно встановилося)
 
-![ekeDbSX](https://user-images.githubusercontent.com/102728347/179351476-df713563-4041-4e6e-8b5d-b0ad197e4c30.jpeg)
+![ngazd4U](https://user-images.githubusercontent.com/102728347/179351515-3004bcf9-edff-4445-8658-416eadf7e41d.jpeg)
+
 
