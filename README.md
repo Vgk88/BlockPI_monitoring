@@ -79,7 +79,8 @@ http://<IP_address>:3000
 ```
 cd /var/lib/docker/volumes/monitoring_prom-configs/_data
 rm prometheus.yml
-wget 
+wget https://raw.githubusercontent.com/MaxMavaIll/BlockPI_monitoring/main/prometheus.yml
+
 ```
 
 
