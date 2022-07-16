@@ -109,7 +109,6 @@ sudo docker ps
 
 ```
 sudo docker restart <CONTAINER ID>
-
 ```
 Все ви підняли prometheus.
 Тепер щоб провірити чи він в справному стані, ми водимо в браузері.
