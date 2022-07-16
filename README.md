@@ -54,8 +54,8 @@ cd ~/Grafana-Prometheus
 
 ### Створюємо контейнер
 ```
-docker swarm init
-docker stack deploy -c ~/Grafana-Prometheus/docker-compose.yml monitoring
+sudo docker swarm init
+sudo docker stack deploy -c ~/Grafana-Prometheus/docker-compose.yml monitoring
 
 ```
 ![Screenshot from 2022-05-28 13-27-26](https://user-images.githubusercontent.com/59205554/170821426-25288648-174f-4687-a245-08a4746925a9.png)
@@ -66,7 +66,7 @@ docker stack deploy -c ~/Grafana-Prometheus/docker-compose.yml monitoring
 Не спіши запускати зачикай деякий час щоб воно все запустило.
 
 ```
-docker ps
+sudo docker ps
 
 ```
 
@@ -102,13 +102,13 @@ sed -i 's/your_address/<Your_address>/' /var/lib/docker/volumes/monitoring_prom-
 ### Перезапускаємо prometheus
 Для того щоб перезапустити прометеус нам потрібно дізнатися id контейнера
 ```
-docker ps
+sudo docker ps
 
 ```
 ![Screenshot from 2022-07-16 15-17-24](https://user-images.githubusercontent.com/102728347/179354582-efc6efda-bd83-4a37-93c6-0f3a2b43e6e8.png)
 
 ```
-docker restart <CONTAINER ID>
+sudo docker restart <CONTAINER ID>
 
 ```
 Все ви підняли prometheus.
