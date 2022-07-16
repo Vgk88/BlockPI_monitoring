@@ -129,7 +129,8 @@ http://<IP_address>:3000
 
 add data source -> ![Screenshot from 2022-07-16 16-28-33](https://user-images.githubusercontent.com/102728347/179356942-de8fa026-0365-43a6-9a3f-6d52c37d9450.png)
 
-prometheus -> ![Screenshot from 2022-07-16 16-44-54](https://user-images.githubusercontent.com/102728347/179357543-57fea3cc-e144-47c3-878a-d5f11790accf.png)
+prometheus
+![Screenshot from 2022-07-16 16-44-54](https://user-images.githubusercontent.com/102728347/179357543-57fea3cc-e144-47c3-878a-d5f11790accf.png)
 
 
 http://prometheus:9090
