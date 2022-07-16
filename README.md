@@ -110,11 +110,13 @@ sudo docker ps
 ```
 sudo docker restart <CONTAINER ID>
 ```
-Все ви підняли prometheus.
+Все ви підняли prometheus. 
 Тепер щоб провірити чи він в справному стані, ми водимо в браузері.
 ```
 http://<your_address_grafana>:9090
 ```
+(Error -> Якщо виводить на екран що сторінку не знайдено зачекайте трішки і спробуйте знову увести свій адрес з портом)
+
 Натискамо Status -> Targets
 
 ![tearTmY](https://user-images.githubusercontent.com/102728347/179355096-409b3161-6675-43d9-b543-80b9ecafb370.jpeg)
