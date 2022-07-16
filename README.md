@@ -88,9 +88,25 @@ wget https://raw.githubusercontent.com/MaxMavaIll/BlockPI_monitoring/main/promet
 sed -i 's/your_address/<Your_address>/' /var/lib/docker/volumes/monitoring_prom-configs/_data/prometheus.yml
 
 ```
-Перезапускаємо prometheus
+### Перезапускаємо prometheus
+Для того щоб перезапустити прометеус нам потрібно дізнатися id контейнера
 ```
+docker ps
 
 ```
+![Screenshot from 2022-07-16 15-17-24](https://user-images.githubusercontent.com/102728347/179354582-efc6efda-bd83-4a37-93c6-0f3a2b43e6e8.png)
 
-wget -q -O node_exporter.sh  && chmod +x node_exporter.sh && sudo /bin/bash node_exporter.sh
+```
+docker restart <CONTAINER ID>
+
+```
+Все ви підняли prometheus.
+Тепер щоб провірити чи він в справному стані, ми водимо в браузері.
+```
+http://<your_address_grafana>:9090
+```
+Натискамо Status -> Targets
+
+![tearTmY](https://user-images.githubusercontent.com/102728347/179355096-409b3161-6675-43d9-b543-80b9ecafb370.jpeg)
+
+wget -q -O node_exporter.sh https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/node-exporter.sh && chmod +x node_exporter.sh && sudo /bin/bash node_exporter.sh
