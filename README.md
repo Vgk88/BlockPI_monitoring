@@ -3,7 +3,7 @@
 1. Встановлюємо grafana, prometheus i node-exporter
 2. Налаштування конфігурації prometheuss 
 3. Налаштування Grafana
-4. Настройка панелі HyperNode і Klaytn
+4. Настройка панелі Klaytn
 
 
 
