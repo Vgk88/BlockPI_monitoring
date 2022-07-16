@@ -151,8 +151,8 @@ prometheus
 Вибираємо яку хочемо загрузити таблицю від розробників BlockPI
 і вставляємо її в поле `Import via panel json`
 
-* [HyperNode](https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/HyperNode.rm)
-* [Klaytn]()
+* [HyperNode](https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/HyperNode.json)
+* [Klaytn](https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/Klaytn.json)
 
 
 # Настройка панелі Klaytn
