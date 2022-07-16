@@ -1,14 +1,16 @@
 # BlockPI_monitoring
 
 1. Встановлюємо графану 
-2. Настройка конфигурации prometheus 
+2. Встановлюємо node-exporter
+3. Встановлюємо prometheus
+4. Настройка конфигурации prometheus 
 
 
 # Grafana
 
 Grafana - це платформа для візуалізації моніторингу та аналізу даних
 
-Для встновлення Grafana і робочої схеми ми повині також встановити такі прогарами як Prometheus і Node-exporte
+Для встновлення Grafana і робочої схеми ми повині також встановити такі прогарами як Prometheus і Node-exporte. 
 
 ### Заходимо в root користувача
 ```
@@ -108,5 +110,10 @@ http://<your_address_grafana>:9090
 Натискамо Status -> Targets
 
 ![tearTmY](https://user-images.githubusercontent.com/102728347/179355096-409b3161-6675-43d9-b543-80b9ecafb370.jpeg)
+
+Якщо у вас такий вигляд то все підключилося і правильно працює 
+
+![Screenshot from 2022-07-16 15-36-24](https://user-images.githubusercontent.com/102728347/179355199-eed91018-6d6c-49bc-a3e3-463b04f64932.png)
+
 
 wget -q -O node_exporter.sh https://github.com/MaxMavaIll/BlockPI_monitoring/blob/main/node-exporter.sh && chmod +x node_exporter.sh && sudo /bin/bash node_exporter.sh
